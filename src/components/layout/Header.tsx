@@ -42,7 +42,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto flex justify-end items-center">
           <a
             href="tel:+1-555-123-4567"
-            className="flex items-center gap-2 text-sm hover:text-saddle-300 transition-colors"
+            className="flex items-center gap-2 text-sm hover:text-gold-400 transition-colors"
           >
             <Phone className="h-4 w-4" />
             <span>(555) 123-4567</span>
@@ -59,7 +59,7 @@ export default function Header() {
               <span className="text-2xl font-bold text-forest-900 tracking-tight group-hover:text-forest-700 transition-colors">
                 Carolina
               </span>
-              <span className="text-sm font-medium text-saddle-600 tracking-widest uppercase -mt-1">
+              <span className="text-sm font-medium text-gold-600 tracking-widest uppercase -mt-1">
                 Horse Farm Realty
               </span>
             </div>
@@ -71,7 +71,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-forest-700 font-medium hover:text-saddle-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-saddle-600 after:transition-all hover:after:w-full"
+                className="text-forest-700 font-medium hover:text-gold-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold-600 after:transition-all hover:after:w-full"
               >
                 {link.label}
               </Link>
@@ -111,7 +111,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-3 text-forest-700 font-medium hover:text-saddle-600 hover:bg-cream-100 rounded-md transition-colors"
+                className="block px-4 py-3 text-forest-700 font-medium hover:text-gold-600 hover:bg-cream-100 rounded-md transition-colors"
               >
                 {link.label}
               </Link>

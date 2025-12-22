@@ -37,7 +37,7 @@ function PropertyCard({ property }: { property: Property }) {
           <Home className="w-16 h-16 text-forest-300 opacity-50" />
         </div>
         <div className="absolute top-4 left-4">
-          <span className="bg-saddle-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+          <span className="bg-gold-600 text-charcoal-900 px-3 py-1 rounded-full text-sm font-medium">
             {property.propertyType.charAt(0).toUpperCase() + property.propertyType.slice(1)}
           </span>
         </div>
@@ -74,12 +74,12 @@ function PropertyCard({ property }: { property: Property }) {
             </span>
           )}
           {property.equestrianAmenities.hasIndoorArena && (
-            <span className="bg-saddle-100 text-saddle-700 px-3 py-1 rounded-full text-xs font-medium">
+            <span className="bg-gold-100 text-gold-800 px-3 py-1 rounded-full text-xs font-medium">
               Indoor Arena
             </span>
           )}
           {property.equestrianAmenities.hasOutdoorArena && (
-            <span className="bg-saddle-100 text-saddle-700 px-3 py-1 rounded-full text-xs font-medium">
+            <span className="bg-gold-100 text-gold-800 px-3 py-1 rounded-full text-xs font-medium">
               Outdoor Arena
             </span>
           )}
@@ -135,7 +135,7 @@ function TestimonialCard({
       <div className="border-t border-forest-100 pt-4">
         <p className="font-bold text-forest-900">{name}</p>
         <p className="text-sm text-forest-600">{location}</p>
-        <p className="text-xs text-saddle-600 mt-1">{propertyType}</p>
+        <p className="text-xs text-gold-700 mt-1">{propertyType}</p>
       </div>
     </div>
   );
@@ -336,7 +336,7 @@ export default function HomePage() {
           <div className="max-w-4xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Find Your Perfect<br />
-              <span className="text-cream-300">Equestrian Property</span>
+              <span className="text-gold-400">Equestrian Property</span>
             </h1>
             <p className="text-xl sm:text-2xl text-cream-100 mb-10 max-w-2xl leading-relaxed">
               Specializing in horse farms, equestrian estates, and land for horses in the Charlotte Metro area

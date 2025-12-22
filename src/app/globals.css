@@ -1,44 +1,51 @@
 @import "tailwindcss";
 
 :root {
-  /* Luxury Equestrian Color Palette */
-  --forest-900: #1a2e1a;
-  --forest-800: #2d4a2d;
-  --forest-700: #3d6b3d;
-  --forest-600: #4a7c4a;
-  --forest-500: #5a8f5a;
-  --forest-400: #7ab37a;
-  --forest-300: #a3cda3;
-  --forest-200: #c8e0c8;
-  --forest-100: #e8f4e8;
-  --forest-50: #f5faf5;
+  /* Brand Color Palette */
+  /* Deep Green (#1F3D2B) - Primary */
+  --forest-900: #0f1e15;
+  --forest-800: #172b1f;
+  --forest-700: #1F3D2B;
+  --forest-600: #2a5139;
+  --forest-500: #366548;
+  --forest-400: #4a8562;
+  --forest-300: #6fa586;
+  --forest-200: #a3c9b3;
+  --forest-100: #d1e4d9;
+  --forest-50: #edf5f0;
 
-  --saddle-900: #3d2914;
-  --saddle-800: #5c3d1e;
-  --saddle-700: #7a5128;
-  --saddle-600: #8b5e30;
-  --saddle-500: #a06b3a;
-  --saddle-400: #c4915e;
-  --saddle-300: #d4ac82;
-  --saddle-200: #e4c9a8;
-  --saddle-100: #f2e4d0;
-  --saddle-50: #faf6f0;
+  /* Gold (#C8A951) - Accent */
+  --gold-900: #5c4a1e;
+  --gold-800: #7a6328;
+  --gold-700: #a38535;
+  --gold-600: #C8A951;
+  --gold-500: #C8A951;
+  --gold-400: #d4bb70;
+  --gold-300: #e0cd90;
+  --gold-200: #ecdfb8;
+  --gold-100: #f7f0db;
+  --gold-50: #fbf8ef;
 
-  --cream-50: #fffef7;
-  --cream-100: #fefcf0;
-  --cream-200: #fdf8e1;
-  --cream-300: #faf2c9;
-  --cream-400: #f5e8a8;
-  --cream-500: #edd980;
+  /* Charcoal (#2B2B2B) - Neutral */
+  --charcoal-900: #1a1a1a;
+  --charcoal-800: #2B2B2B;
+  --charcoal-700: #3d3d3d;
+  --charcoal-600: #525252;
+  --charcoal-500: #6b6b6b;
+  --charcoal-400: #8a8a8a;
+  --charcoal-300: #ababab;
+  --charcoal-200: #d1d1d1;
+  --charcoal-100: #e8e8e8;
+  --charcoal-50: #f5f5f5;
 
-  --gold-700: #8b6914;
-  --gold-500: #b8860b;
-  --gold-400: #d4a017;
-  --gold-300: #e6b422;
-  --gold-100: #fef3cd;
+  /* Cream/Light backgrounds */
+  --cream-50: #fdfcf9;
+  --cream-100: #faf8f3;
+  --cream-200: #f5f2e8;
+  --cream-300: #ede8d9;
 
   --background: var(--cream-50);
-  --foreground: var(--forest-900);
+  --foreground: var(--charcoal-800);
 }
 
 @theme inline {
@@ -47,7 +54,7 @@
   --font-sans: var(--font-playfair), Georgia, serif;
   --font-body: var(--font-lato), Arial, sans-serif;
 
-  /* Custom Colors */
+  /* Deep Green */
   --color-forest-900: var(--forest-900);
   --color-forest-800: var(--forest-800);
   --color-forest-700: var(--forest-700);
@@ -59,27 +66,47 @@
   --color-forest-100: var(--forest-100);
   --color-forest-50: var(--forest-50);
 
-  --color-saddle-900: var(--saddle-900);
-  --color-saddle-800: var(--saddle-800);
-  --color-saddle-700: var(--saddle-700);
-  --color-saddle-600: var(--saddle-600);
-  --color-saddle-500: var(--saddle-500);
-  --color-saddle-400: var(--saddle-400);
-  --color-saddle-300: var(--saddle-300);
-  --color-saddle-200: var(--saddle-200);
-  --color-saddle-100: var(--saddle-100);
-  --color-saddle-50: var(--saddle-50);
+  /* Gold */
+  --color-gold-900: var(--gold-900);
+  --color-gold-800: var(--gold-800);
+  --color-gold-700: var(--gold-700);
+  --color-gold-600: var(--gold-600);
+  --color-gold-500: var(--gold-500);
+  --color-gold-400: var(--gold-400);
+  --color-gold-300: var(--gold-300);
+  --color-gold-200: var(--gold-200);
+  --color-gold-100: var(--gold-100);
+  --color-gold-50: var(--gold-50);
 
+  /* Charcoal */
+  --color-charcoal-900: var(--charcoal-900);
+  --color-charcoal-800: var(--charcoal-800);
+  --color-charcoal-700: var(--charcoal-700);
+  --color-charcoal-600: var(--charcoal-600);
+  --color-charcoal-500: var(--charcoal-500);
+  --color-charcoal-400: var(--charcoal-400);
+  --color-charcoal-300: var(--charcoal-300);
+  --color-charcoal-200: var(--charcoal-200);
+  --color-charcoal-100: var(--charcoal-100);
+  --color-charcoal-50: var(--charcoal-50);
+
+  /* Cream */
   --color-cream-50: var(--cream-50);
   --color-cream-100: var(--cream-100);
   --color-cream-200: var(--cream-200);
   --color-cream-300: var(--cream-300);
 
-  --color-gold-700: var(--gold-700);
-  --color-gold-500: var(--gold-500);
-  --color-gold-400: var(--gold-400);
-  --color-gold-300: var(--gold-300);
-  --color-gold-100: var(--gold-100);
+  /* Legacy aliases for compatibility */
+  --color-saddle-900: var(--gold-900);
+  --color-saddle-800: var(--gold-800);
+  --color-saddle-700: var(--gold-700);
+  --color-saddle-600: var(--gold-600);
+  --color-saddle-500: var(--gold-500);
+  --color-saddle-400: var(--gold-400);
+  --color-saddle-300: var(--gold-300);
+  --color-saddle-200: var(--gold-200);
+  --color-saddle-100: var(--gold-100);
+  --color-saddle-50: var(--gold-50);
 }
 
 body {
@@ -112,9 +139,9 @@ h1, h2, h3, h4, h5, h6 {
 .hero-gradient {
   background: linear-gradient(
     to right,
-    rgba(26, 46, 26, 0.85) 0%,
-    rgba(26, 46, 26, 0.6) 50%,
-    rgba(26, 46, 26, 0.3) 100%
+    rgba(31, 61, 43, 0.9) 0%,
+    rgba(31, 61, 43, 0.65) 50%,
+    rgba(31, 61, 43, 0.35) 100%
   );
 }
 
@@ -124,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .property-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(26, 46, 26, 0.15);
+  box-shadow: 0 20px 40px rgba(31, 61, 43, 0.15);
 }
 
 .btn-primary {
@@ -141,8 +168,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-secondary {
-  background-color: var(--saddle-600);
-  color: white;
+  background-color: var(--gold-600);
+  color: var(--charcoal-900);
   padding: 0.75rem 1.5rem;
   border-radius: 0.375rem;
   font-weight: 500;
@@ -150,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-secondary:hover {
-  background-color: var(--saddle-700);
+  background-color: var(--gold-700);
 }
 
 .btn-outline {
@@ -171,32 +198,32 @@ h1, h2, h3, h4, h5, h6 {
 .input-field {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 1px solid var(--forest-200);
+  border: 1px solid var(--charcoal-200);
   border-radius: 0.375rem;
   background-color: white;
-  color: var(--forest-900);
+  color: var(--charcoal-800);
 }
 
 .input-field::placeholder {
-  color: var(--forest-400);
+  color: var(--charcoal-400);
 }
 
 .input-field:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--forest-400);
+  box-shadow: 0 0 0 2px var(--gold-400);
   border-color: transparent;
 }
 
 .select-field {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 1px solid var(--forest-200);
+  border: 1px solid var(--charcoal-200);
   border-radius: 0.375rem;
   background-color: white;
-  color: var(--forest-900);
+  color: var(--charcoal-800);
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%233d6b3d' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%231F3D2B' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
   background-position: right 0.5rem center;
   background-repeat: no-repeat;
   background-size: 1.5em 1.5em;
@@ -205,17 +232,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .select-field:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--forest-400);
+  box-shadow: 0 0 0 2px var(--gold-400);
   border-color: transparent;
 }
 
 /* Blog Article Prose Styles */
 .prose {
-  color: var(--forest-700);
+  color: var(--charcoal-700);
 }
 
 .prose h2 {
-  color: var(--forest-900);
+  color: var(--charcoal-800);
   font-size: 1.75rem;
   font-weight: 700;
   margin-top: 2.5rem;
@@ -224,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .prose h3 {
-  color: var(--forest-900);
+  color: var(--charcoal-800);
   font-size: 1.375rem;
   font-weight: 600;
   margin-top: 2rem;
@@ -255,29 +282,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .prose li::marker {
-  color: var(--saddle-600);
+  color: var(--gold-600);
 }
 
 .prose a {
-  color: var(--saddle-600);
+  color: var(--gold-700);
   text-decoration: underline;
   transition: color 0.2s;
 }
 
 .prose a:hover {
-  color: var(--saddle-700);
+  color: var(--gold-800);
 }
 
 .prose blockquote {
-  border-left: 4px solid var(--saddle-400);
+  border-left: 4px solid var(--gold-500);
   padding-left: 1.5rem;
   margin: 2rem 0;
   font-style: italic;
-  color: var(--forest-600);
+  color: var(--charcoal-600);
 }
 
 .prose strong {
-  color: var(--forest-900);
+  color: var(--charcoal-800);
   font-weight: 600;
 }
 
@@ -287,6 +314,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .prose hr {
-  border-color: var(--forest-200);
+  border-color: var(--charcoal-200);
   margin: 2.5rem 0;
 }
