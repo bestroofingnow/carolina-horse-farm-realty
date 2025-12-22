@@ -49,6 +49,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 // Revalidate every 5 minutes
 export const revalidate = 300;
 
+// Allow dynamic routes for posts not pre-generated at build time
+export const dynamicParams = true;
+
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = await getPost(slug);

@@ -703,14 +703,23 @@ export async function getPost(slug: string): Promise<BlogPost | null> {
   }
 
   try {
+    console.log(`[WordPress] Fetching post by slug: "${slug}"`);
     const data = await fetchGraphQL<PostBySlugQueryResponse>(GET_POST_BY_SLUG, {
       slug,
     });
 
     if (!data.post) {
+      console.warn(`[WordPress] No post found for slug: "${slug}"`);
+      // Try to find in mock data as final fallback
+      const mockPost = mockBlogPosts.find((post) => post.slug === slug);
+      if (mockPost) {
+        console.log(`[WordPress] Found post "${slug}" in mock data`);
+        return mockPost;
+      }
       return null;
     }
 
+    console.log(`[WordPress] Successfully fetched post: "${data.post.title}"`);
     return transformWPPostToBlogPost(data.post);
   } catch (error) {
     console.error(`[WordPress] Failed to fetch post "${slug}":`, error);
