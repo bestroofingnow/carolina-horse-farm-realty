@@ -223,8 +223,13 @@ export default function AboutPage() {
     <div className="min-h-screen bg-cream-50">
       {/* Hero Section */}
       <section className="relative py-24 lg:py-32">
-        <div className="absolute inset-0 bg-gradient-to-br from-forest-900 via-forest-800 to-forest-700">
-          <div className="absolute inset-0 bg-[url('/images/hero-pattern.png')] opacity-10" />
+        <div className="absolute inset-0">
+          <img
+            src="https://storage.googleapis.com/msgsndr/OTLRU5jdjnOObaWbFyny/media/6949d472ee99d010cab14b62.gif"
+            alt="Carolina Horse Farm"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-forest-900/70" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
