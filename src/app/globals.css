@@ -113,14 +113,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body), Arial, sans-serif;
-  cursor: url('/cursors/horse-cursor.svg') 16 28, auto;
+  cursor: url('/cursors/horse-cursor.svg') 10 28, auto;
 }
 
 /* Horse pointer cursor for clickable elements */
 a, button, [role="button"],
 input[type="submit"], input[type="button"],
 .cursor-pointer, [onclick] {
-  cursor: url('/cursors/horse-pointer.svg') 16 28, pointer;
+  cursor: url('/cursors/horse-pointer.svg') 10 28, pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
