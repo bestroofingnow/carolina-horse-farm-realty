@@ -446,6 +446,19 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Horse Farm GIF Section */}
+      <section className="py-12 bg-cream-100">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img
+              src="https://storage.googleapis.com/msgsndr/OTLRU5jdjnOObaWbFyny/media/6949d472ee99d010cab14b62.gif"
+              alt="Beautiful Carolina Horse Farm"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Value Props Section */}
       <section className="py-20 bg-forest-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

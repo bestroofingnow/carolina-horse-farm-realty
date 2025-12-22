@@ -249,8 +249,15 @@ export default function PropertiesPage() {
   return (
     <div className="min-h-screen bg-cream-50">
       {/* Hero Section */}
-      <section className="relative bg-forest-900 py-16 md:py-24">
-        <div className="absolute inset-0 bg-[url('/images/hero-pattern.svg')] opacity-10" />
+      <section className="relative py-16 md:py-24">
+        <div className="absolute inset-0">
+          <img
+            src="https://storage.googleapis.com/msgsndr/OTLRU5jdjnOObaWbFyny/media/6949d47259a0a601bc7a907e.png"
+            alt="Carolina Horse Farm Properties"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-forest-900/75" />
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cream-50 mb-4">
             Browse Horse Properties
