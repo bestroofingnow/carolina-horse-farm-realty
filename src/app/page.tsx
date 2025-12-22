@@ -327,8 +327,12 @@ export default function HomePage() {
     <main className="min-h-screen bg-cream-50">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-forest-900 via-forest-800 to-forest-700">
-          <div className="absolute inset-0 bg-[url('/images/hero-pattern.png')] opacity-10" />
+        <div className="absolute inset-0">
+          <img
+            src="https://blog.carolinahorsefarmrealty.com/wp-content/uploads/2025/12/Carolina-Horse-Farm-Realty-scaled.png"
+            alt="Carolina Horse Farm Realty - Equestrian Properties"
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="hero-gradient absolute inset-0" />
 

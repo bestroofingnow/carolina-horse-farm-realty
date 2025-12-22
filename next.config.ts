@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: '**.mlsgrid.com' },
       { protocol: 'https', hostname: '**.wordpress.com' },
       { protocol: 'https', hostname: 'carolinahorsefarmrealty.com' },
+      { protocol: 'https', hostname: 'blog.carolinahorsefarmrealty.com' },
     ],
   },
   env: {
