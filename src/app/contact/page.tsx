@@ -148,7 +148,7 @@ export default function ContactPage() {
       <section className="relative py-16 md:py-24">
         <div className="absolute inset-0">
           <img
-            src="https://blog.carolinahorsefarmrealty.com/wp-content/uploads/2025/12/Untitled-design-52.png"
+            src="https://blog.carolinahorsefarmrealty.com/wp-content/uploads/2025/12/Untitled-design-4.gif"
             alt="Get in Touch with Carolina Horse Farm Realty"
             className="w-full h-full object-cover"
           />
