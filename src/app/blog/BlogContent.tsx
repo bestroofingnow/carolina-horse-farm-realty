@@ -274,6 +274,10 @@ export default function BlogContent({ posts }: BlogContentProps) {
             src="https://blog.carolinahorsefarmrealty.com/wp-content/uploads/2025/12/Untitled-design-51.png"
             alt="Living the Best Horse Farm Life"
             className="w-full h-full object-cover"
+            fetchPriority="high"
+            loading="eager"
+            width={1920}
+            height={1080}
           />
           <div className="absolute inset-0 bg-forest-900/70" />
         </div>

@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: '**.wordpress.com' },
       { protocol: 'https', hostname: 'carolinahorsefarmrealty.com' },
       { protocol: 'https', hostname: 'blog.carolinahorsefarmrealty.com' },
+      { protocol: 'https', hostname: 'storage.googleapis.com' },
     ],
   },
   env: {

@@ -255,6 +255,10 @@ export default function PropertiesPage() {
             src="https://storage.googleapis.com/msgsndr/OTLRU5jdjnOObaWbFyny/media/6949d47259a0a601bc7a907e.png"
             alt="Carolina Horse Farm Properties"
             className="w-full h-full object-cover"
+            fetchPriority="high"
+            loading="eager"
+            width={1920}
+            height={1080}
           />
           <div className="absolute inset-0 bg-forest-900/75" />
         </div>

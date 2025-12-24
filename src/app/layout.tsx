@@ -29,6 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <link rel="preconnect" href="https://blog.carolinahorsefarmrealty.com" />
+        <link rel="preconnect" href="https://storage.googleapis.com" />
+        <link rel="dns-prefetch" href="https://blog.carolinahorsefarmrealty.com" />
+        <link rel="dns-prefetch" href="https://storage.googleapis.com" />
+      </head>
       <body className={`${playfair.variable} ${lato.variable} antialiased`}>
         <Header />
         <main>{children}</main>

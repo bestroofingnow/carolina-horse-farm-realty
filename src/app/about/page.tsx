@@ -228,6 +228,10 @@ export default function AboutPage() {
             src="https://storage.googleapis.com/msgsndr/OTLRU5jdjnOObaWbFyny/media/6949d472ee99d010cab14b62.gif"
             alt="Carolina Horse Farm"
             className="w-full h-full object-cover"
+            fetchPriority="high"
+            loading="eager"
+            width={1920}
+            height={1080}
           />
           <div className="absolute inset-0 bg-forest-900/70" />
         </div>

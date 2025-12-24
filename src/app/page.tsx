@@ -332,6 +332,11 @@ export default function HomePage() {
             src="https://blog.carolinahorsefarmrealty.com/wp-content/uploads/2025/12/Carolina-Horse-Farm-Realty-scaled.png"
             alt="Carolina Horse Farm Realty - Equestrian Properties"
             className="w-full h-full object-cover"
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
+            width={1920}
+            height={1080}
           />
         </div>
         <div className="hero-gradient absolute inset-0" />
