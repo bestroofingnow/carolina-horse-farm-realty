@@ -85,12 +85,42 @@ export default function ContactPage() {
     e.preventDefault();
     setFormStatus("submitting");
 
-    // Simulate form submission
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // Send to Go High Level webhook
+      const webhookData = {
+        // Form source
+        formName: "Contact Page Form",
+        formSource: "Carolina Horse Farm Realty Website",
+        submittedAt: new Date().toISOString(),
+        pageUrl: typeof window !== "undefined" ? window.location.href : "",
 
-      // In a real application, you would send the form data to your backend
-      console.log("Form submitted:", formData);
+        // Contact information
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        fullName: `${formData.firstName} ${formData.lastName}`,
+        email: formData.email,
+        phone: formData.phone,
+
+        // Form-specific fields
+        propertyInterest: formData.propertyInterest,
+        preferredContact: formData.preferredContact,
+        message: formData.message,
+      };
+
+      const response = await fetch(
+        "https://services.leadconnectorhq.com/hooks/OTLRU5jdjnOObaWbFyny/webhook-trigger/05419169-3e67-4ec5-8d8f-17c2a7358945",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(webhookData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Webhook submission failed");
+      }
 
       setFormStatus("success");
       setFormData({
@@ -102,7 +132,8 @@ export default function ContactPage() {
         preferredContact: "email",
         message: "",
       });
-    } catch {
+    } catch (error) {
+      console.error("Form submission error:", error);
       setFormStatus("error");
     }
   };

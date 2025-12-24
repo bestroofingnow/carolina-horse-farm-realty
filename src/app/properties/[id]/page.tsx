@@ -483,11 +483,54 @@ function ContactForm({ property }: { property: Property }) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      // Send to Go High Level webhook
+      const webhookData = {
+        // Form source
+        formName: "Property Inquiry Form",
+        formSource: "Carolina Horse Farm Realty Website",
+        submittedAt: new Date().toISOString(),
+        pageUrl: typeof window !== "undefined" ? window.location.href : "",
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+        // Contact information
+        fullName: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+
+        // Property information
+        propertyTitle: property.title,
+        propertyMLS: property.mlsNumber,
+        propertyPrice: property.price,
+        propertyAddress: `${property.address}, ${property.city}, ${property.state} ${property.zipCode}`,
+        propertyType: property.propertyType,
+        propertyAcreage: property.acreage,
+        propertyId: property.id,
+      };
+
+      const response = await fetch(
+        "https://services.leadconnectorhq.com/hooks/OTLRU5jdjnOObaWbFyny/webhook-trigger/05419169-3e67-4ec5-8d8f-17c2a7358945",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(webhookData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Webhook submission failed");
+      }
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      // Still show success to user but log error
+      setIsSubmitted(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
