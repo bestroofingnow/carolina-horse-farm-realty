@@ -3,7 +3,7 @@ import { getPosts } from "@/lib/wordpress";
 import BlogContent from "./BlogContent";
 
 export const metadata: Metadata = {
-  title: "Equestrian Living Blog | Carolina Horse Farm Realty",
+  title: "Living the Best Horse Farm Life | Carolina Horse Farm Realty",
   description:
     "Expert insights on horse property buying and selling, area guides, market updates, and everything you need to know about equestrian living in the Charlotte Metro area.",
 };
