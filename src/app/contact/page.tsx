@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import {
   Phone,
   Mail,
@@ -147,14 +148,14 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative py-16 md:py-24">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="https://blog.carolinahorsefarmrealty.com/wp-content/uploads/2025/12/Untitled-design-4.gif"
             alt="Get in Touch with Carolina Horse Farm Realty"
-            className="w-full h-full object-cover"
-            fetchPriority="high"
-            loading="eager"
-            width={1920}
-            height={1080}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+            unoptimized
           />
           <div className="absolute inset-0 bg-forest-900/70" />
         </div>

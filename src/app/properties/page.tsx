@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ChevronDown,
   ChevronUp,
@@ -251,14 +252,14 @@ export default function PropertiesPage() {
       {/* Hero Section */}
       <section className="relative py-16 md:py-24">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="https://storage.googleapis.com/msgsndr/OTLRU5jdjnOObaWbFyny/media/6949d47259a0a601bc7a907e.png"
             alt="Carolina Horse Farm Properties"
-            className="w-full h-full object-cover"
-            fetchPriority="high"
-            loading="eager"
-            width={1920}
-            height={1080}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+            quality={75}
           />
           <div className="absolute inset-0 bg-forest-900/75" />
         </div>

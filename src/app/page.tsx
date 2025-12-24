@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Search,
   Home,
@@ -328,15 +329,14 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="https://blog.carolinahorsefarmrealty.com/wp-content/uploads/2025/12/Carolina-Horse-Farm-Realty-scaled.png"
             alt="Carolina Horse Farm Realty - Equestrian Properties"
-            className="w-full h-full object-cover"
-            fetchPriority="high"
-            loading="eager"
-            decoding="async"
-            width={1920}
-            height={1080}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+            quality={75}
           />
         </div>
         <div className="hero-gradient absolute inset-0" />
