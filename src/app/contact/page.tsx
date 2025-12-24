@@ -145,8 +145,15 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-cream-50">
       {/* Hero Section */}
-      <section className="relative bg-forest-900 py-16 md:py-24">
-        <div className="absolute inset-0 bg-[url('/images/hero-pattern.svg')] opacity-10" />
+      <section className="relative py-16 md:py-24">
+        <div className="absolute inset-0">
+          <img
+            src="https://blog.carolinahorsefarmrealty.com/wp-content/uploads/2025/12/Untitled-design-52.png"
+            alt="Get in Touch with Carolina Horse Farm Realty"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-forest-900/70" />
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cream-50 mb-4">
             Get in Touch
