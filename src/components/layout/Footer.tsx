@@ -44,7 +44,7 @@ export default function Footer() {
               Carolina Horse Farm Realty
             </h3>
             <p className="text-forest-200 text-sm leading-relaxed">
-              Specializing in luxury equestrian properties, horse farms, and
+              Specializing in horse farms, luxury equestrian properties, and
               country estates throughout the Charlotte Metro area. Your trusted
               partner in finding the perfect equestrian lifestyle.
             </p>

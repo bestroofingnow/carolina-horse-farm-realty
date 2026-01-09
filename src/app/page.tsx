@@ -345,10 +345,10 @@ export default function HomePage() {
           <div className="max-w-4xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Find Your Perfect<br />
-              <span className="text-gold-400">Equestrian Property</span>
+              <span className="text-gold-400">Horse Farm Property</span>
             </h1>
             <p className="text-xl sm:text-2xl text-cream-100 mb-10 max-w-2xl leading-relaxed">
-              Specializing in horse farms, equestrian estates, and land for horses in the Charlotte Metro area
+              Specializing in farm houses, equestrian properties, and homes with land in the Charlotte Metro area
             </p>
 
             <div className="bg-white/95 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-2xl max-w-3xl">
