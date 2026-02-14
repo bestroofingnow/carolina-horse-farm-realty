@@ -25,7 +25,7 @@ const extendedTeamMembers: TeamMember[] = [
     id: "1",
     name: "Lara Murphy",
     title: "Broker / Owner",
-    phone: "(704) 555-0123",
+    phone: "(704) 929-3289",
     email: "lara@carolinahorsefarmrealty.com",
     photo: "/images/team/lara-murphy.jpg",
     bio: "With over 15 years of experience in equestrian real estate, Lara has helped hundreds of families find their perfect horse property. A lifelong equestrian herself, she understands the unique needs of horse owners and brings unmatched expertise to every transaction.",
@@ -35,7 +35,7 @@ const extendedTeamMembers: TeamMember[] = [
     id: "2",
     name: "Michael Patterson",
     title: "Senior Agent",
-    phone: "(704) 555-0124",
+    phone: "(704) 929-3289",
     email: "michael@carolinahorsefarmrealty.com",
     photo: "/images/team/michael-patterson.jpg",
     bio: "Michael brings a decade of experience in luxury real estate combined with a passion for the equestrian lifestyle. His background in agricultural property assessment ensures clients receive expert guidance on land value and facility quality.",
@@ -45,7 +45,7 @@ const extendedTeamMembers: TeamMember[] = [
     id: "3",
     name: "Sarah Chen",
     title: "Equestrian Property Specialist",
-    phone: "(704) 555-0125",
+    phone: "(704) 929-3289",
     email: "sarah@carolinahorsefarmrealty.com",
     photo: "/images/team/sarah-chen.jpg",
     bio: "Sarah is a competitive dressage rider who turned her passion for horses into a thriving real estate career. She specializes in helping buyers find properties that meet their specific equestrian discipline requirements.",
@@ -481,13 +481,13 @@ export default function AboutPage() {
               Contact Us Today
             </Link>
             <a
-              href="tel:+17045550123"
+              href="tel:+17049293289"
               className="flex items-center gap-3 text-cream-100 hover:text-white transition-colors text-lg"
             >
               <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                 <Phone className="w-6 h-6" />
               </div>
-              <span className="font-medium">(704) 555-0123</span>
+              <span className="font-medium">(704) 929-3289</span>
             </a>
           </div>
         </div>

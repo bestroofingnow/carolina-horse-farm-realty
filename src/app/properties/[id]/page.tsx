@@ -31,7 +31,7 @@ const mockAgent: Agent = {
   id: "1",
   name: "Lara Murphy",
   title: "Broker / Owner",
-  phone: "(704) 555-0123",
+  phone: "(704) 929-3289",
   email: "lara@carolinahorsefarmrealty.com",
   photo: "/images/team/lara-murphy.jpg",
   bio: "With over 15 years of experience in equestrian real estate, Lara brings unparalleled knowledge of the Charlotte Metro equestrian community. A lifelong equestrian and former competitive jumper, she understands the unique needs of horse owners and breeders.",
@@ -605,7 +605,7 @@ function ContactForm({ property }: { property: Property }) {
             value={formData.phone}
             onChange={handleChange}
             className="input-field"
-            placeholder="(555) 123-4567"
+            placeholder="(704) 929-3289"
           />
         </div>
 

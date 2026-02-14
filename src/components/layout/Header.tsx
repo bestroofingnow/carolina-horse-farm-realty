@@ -90,11 +90,11 @@ export default function Header() {
       <div className="bg-forest-900 text-cream-50 py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-end items-center">
           <a
-            href="tel:+1-555-123-4567"
+            href="tel:+17049293289"
             className="flex items-center gap-2 text-sm hover:text-gold-400 transition-colors"
           >
             <Phone className="h-4 w-4" />
-            <span>(555) 123-4567</span>
+            <span>(704) 929-3289</span>
           </a>
         </div>
       </div>

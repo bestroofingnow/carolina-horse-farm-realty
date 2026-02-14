@@ -518,13 +518,13 @@ export default function HomePage() {
               Get in Touch
             </Link>
             <a
-              href="tel:+17045550123"
+              href="tel:+17049293289"
               className="flex items-center gap-3 text-cream-100 hover:text-white transition-colors text-lg"
             >
               <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                 <Phone className="w-6 h-6" />
               </div>
-              <span className="font-medium">(704) 555-0123</span>
+              <span className="font-medium">(704) 929-3289</span>
             </a>
           </div>
         </div>

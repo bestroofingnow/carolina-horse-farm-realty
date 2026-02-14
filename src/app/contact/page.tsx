@@ -289,7 +289,7 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={handleInputChange}
                         className="input-field"
-                        placeholder="(704) 555-0123"
+                        placeholder="(704) 929-3289"
                       />
                     </div>
                   </div>
@@ -425,10 +425,10 @@ export default function ContactPage() {
                     <div>
                       <p className="text-sm text-forest-600 mb-1">Phone</p>
                       <a
-                        href="tel:+17045550123"
+                        href="tel:+17049293289"
                         className="text-forest-900 font-semibold hover:text-saddle-600 transition-colors"
                       >
-                        (704) 555-0123
+                        (704) 929-3289
                       </a>
                     </div>
                   </div>
@@ -472,9 +472,9 @@ export default function ContactPage() {
                     <div>
                       <p className="text-sm text-forest-600 mb-1">Office Hours</p>
                       <div className="text-forest-900 font-semibold space-y-1">
-                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                        <p>Saturday: 10:00 AM - 4:00 PM</p>
-                        <p>Sunday: By Appointment</p>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday: Closed</p>
+                        <p>Sunday: Closed</p>
                       </div>
                     </div>
                   </div>
@@ -547,11 +547,11 @@ export default function ContactPage() {
             Let us put our expertise to work for you.
           </p>
           <a
-            href="tel:+17045550123"
+            href="tel:+17049293289"
             className="inline-flex items-center gap-3 btn-secondary text-lg px-8 py-4"
           >
             <Phone className="w-5 h-5" />
-            Call (704) 555-0123
+            Call (704) 929-3289
           </a>
         </div>
       </section>
