@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 
 // Horse head logo component
@@ -105,10 +106,13 @@ export default function Header() {
           {/* Co-Branded Logos: eXp Land & Ranch (leftmost per brand guidelines) | Carolina Horse Farm Realty */}
           <Link href="/" className="flex items-center gap-3 group">
             {/* eXp Realty Land & Ranch - must be leftmost per brand guidelines */}
-            <div className="hidden sm:flex flex-col items-center leading-none flex-shrink-0">
-              <span className="text-[13px] font-bold text-forest-800 tracking-wide">eXp Realty</span>
-              <span className="text-[10px] font-semibold text-forest-600 tracking-widest uppercase">Land &amp; Ranch</span>
-            </div>
+            <Image
+              src="/images/exp-land-ranch-logo.png"
+              alt="eXp Realty Land & Ranch"
+              width={48}
+              height={48}
+              className="hidden sm:block h-12 w-auto flex-shrink-0"
+            />
             <div className="hidden sm:block h-10 w-px bg-forest-300/50 flex-shrink-0" />
             {/* Carolina Horse Farm Realty */}
             <HorseLogo className="w-12 h-12 flex-shrink-0" />
