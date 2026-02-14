@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 
 // Horse head logo component
@@ -103,30 +102,23 @@ export default function Header() {
       {/* Main Navigation */}
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Co-Branded Logo: eXp Land & Ranch (left) | Carolina Horse Farm Realty (right) */}
-          <Link href="/" className="flex items-center gap-4 group">
+          {/* Co-Branded Logos: eXp Land & Ranch (leftmost per brand guidelines) | Carolina Horse Farm Realty */}
+          <Link href="/" className="flex items-center gap-3 group">
             {/* eXp Realty Land & Ranch - must be leftmost per brand guidelines */}
-            <Image
-              src="/images/exp-land-ranch-logo.svg"
-              alt="eXp Realty Land & Ranch"
-              width={140}
-              height={40}
-              className="h-10 w-auto flex-shrink-0"
-              priority
-            />
-            {/* Divider */}
-            <div className="h-10 w-px bg-forest-300/50 flex-shrink-0 hidden sm:block" />
+            <div className="hidden sm:flex flex-col items-center leading-none flex-shrink-0">
+              <span className="text-[13px] font-bold text-forest-800 tracking-wide">eXp Realty</span>
+              <span className="text-[10px] font-semibold text-forest-600 tracking-widest uppercase">Land &amp; Ranch</span>
+            </div>
+            <div className="hidden sm:block h-10 w-px bg-forest-300/50 flex-shrink-0" />
             {/* Carolina Horse Farm Realty */}
-            <div className="flex items-center gap-2">
-              <HorseLogo className="w-10 h-10 flex-shrink-0" />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-forest-900 tracking-tight group-hover:text-forest-700 transition-colors leading-tight">
-                  Carolina
-                </span>
-                <span className="text-xs font-medium text-gold-600 tracking-widest uppercase leading-tight">
-                  Horse Farm Realty
-                </span>
-              </div>
+            <HorseLogo className="w-12 h-12 flex-shrink-0" />
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-forest-900 tracking-tight group-hover:text-forest-700 transition-colors">
+                Carolina
+              </span>
+              <span className="text-sm font-medium text-gold-600 tracking-widest uppercase -mt-1">
+                Horse Farm Realty
+              </span>
             </div>
           </Link>
 
