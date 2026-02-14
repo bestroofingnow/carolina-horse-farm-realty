@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'carolinahorsefarmrealty.com' },
       { protocol: 'https', hostname: 'blog.carolinahorsefarmrealty.com' },
       { protocol: 'https', hostname: 'storage.googleapis.com' },
+      { protocol: 'https', hostname: 'property-images.realgeeks.com' },
+      { protocol: 'https', hostname: 'cdn2.wncidx.com' },
     ],
   },
   env: {

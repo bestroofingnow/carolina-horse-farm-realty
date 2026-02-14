@@ -42,7 +42,11 @@ export const mockProperties: Property[] = [
     squareFeet: 2447,
     yearBuilt: 2000,
     description: "Turnkey equestrian farm on 10 acres in the desirable Valley Farm community. This working horse property features a well-maintained 9-stall barn with tack room, hot and cold water, and a dedicated feed room. A 100x150 lighted riding arena with quality footing makes year-round training possible. Four fenced pastures with run-in shelters provide ample turnout. The 3-bedroom ranch home offers comfortable living with an open floor plan and views of the pastures. Conveniently located near Mineral Springs Greenway and the 1,100-acre Cane Creek Park with miles of riding trails.",
-    images: ["/images/properties/property-1-hero.jpg", "/images/properties/property-1-barn.jpg", "/images/properties/property-1-pasture.jpg"],
+    images: [
+      "https://property-images.realgeeks.com/nccanopy/2ed7ab4417627b754c63615973106a49.jpg",
+      "https://property-images.realgeeks.com/nccanopy/f9be89b7a29c587948a73a53f120e599.jpg",
+      "https://property-images.realgeeks.com/nccanopy/a574ed45af9ce91cf5f5352bfbe51bee.jpg",
+    ],
     features: ["Open Floor Plan", "Lighted Arena", "Sprinkler System on Arena", "4-Bay Equipment Shed", "Run-in Shed", "Trail Access Nearby"],
     equestrianAmenities: {
       stalls: 9,
@@ -79,7 +83,11 @@ export const mockProperties: Property[] = [
     squareFeet: 0,
     yearBuilt: 0,
     description: "Outstanding opportunity to build your dream equestrian property on 7 beautiful acres in Union County. The property comes with an existing barn featuring 8 matted 12x12 stalls equipped with water, electricity, and fans. Fenced pastures are ready for horses. The gently rolling terrain with mature trees offers an ideal setting for a custom home and additional equestrian facilities. Located in a quiet, rural area of Waxhaw with easy access to local amenities and Charlotte.",
-    images: ["/images/properties/property-2-hero.jpg", "/images/properties/property-2-barn.jpg", "/images/properties/property-2-land.jpg"],
+    images: [
+      "https://property-images.realgeeks.com/nccanopy/a95188a7fdd4da73dfc03d671e066232.jpg",
+      "https://property-images.realgeeks.com/nccanopy/c519453cc589925f8677014274f96dc4.jpg",
+      "https://property-images.realgeeks.com/nccanopy/fb634f7fe66f16e543e57d75f61a809d.jpg",
+    ],
     features: ["Existing Barn with 8 Stalls", "Matted Stalls", "Electric & Water to Barn", "Fans in Each Stall", "Fenced Pastures", "Mature Trees"],
     equestrianAmenities: {
       stalls: 8,
@@ -116,7 +124,11 @@ export const mockProperties: Property[] = [
     squareFeet: 2679,
     yearBuilt: 2005,
     description: "Custom mountain retreat on 25 acres with exceptional equestrian facilities just minutes from the Tryon International Equestrian Center. The home features hand-hewn beams, a cozy wood stove, and a main-level primary suite designed for outdoor living. Two fenced pastures totaling approximately 6 acres provide excellent turnout. A 2-stall stable with tack room serves daily needs, while the impressive 190x85 riding arena with quality all-weather footing allows year-round training. A loop trail suitable for horseback riding winds through the wooded portions of the property. A 60x40 workshop with apartment above offers additional living space or farm staff quarters.",
-    images: ["/images/properties/property-3-hero.jpg", "/images/properties/property-3-arena.jpg", "/images/properties/property-3-mountain.jpg"],
+    images: [
+      "https://cdn2.wncidx.com/43/00/241/4300241/4300241-1.jpg",
+      "https://cdn2.wncidx.com/43/00/241/4300241/4300241-2.jpg",
+      "https://cdn2.wncidx.com/43/00/241/4300241/4300241-3.jpg",
+    ],
     features: ["Hand-Hewn Beams", "Wood Stove", "Main-Level Primary Suite", "60x40 Workshop with Apartment", "Trail Access", "Mountain Views"],
     equestrianAmenities: {
       stalls: 2,
@@ -153,7 +165,11 @@ export const mockProperties: Property[] = [
     squareFeet: 2900,
     yearBuilt: 1994,
     description: "Premier equestrian property featuring 28 custom-designed stalls with stunning mountain views. This 37+ acre facility includes a massive 100x220 irrigated covered arena, a 120x240 outdoor arena, and a separate 6-stall stallion barn. The 3-bedroom, 3-bath home with post-and-beam architecture features a tobacco barn workshop. Creek access, hiking trails, and panoramic mountain views complete this exceptional offering. Ideally located in the heart of North Carolina horse country near the Tryon International Equestrian Center.",
-    images: ["/images/properties/property-4-hero.jpg", "/images/properties/property-4-barn.jpg", "/images/properties/property-4-view.jpg"],
+    images: [
+      "https://cdn2.wncidx.com/42/77/211/4277211/4277211-1.jpg",
+      "https://cdn2.wncidx.com/42/77/211/4277211/4277211-2.jpg",
+      "https://cdn2.wncidx.com/42/77/211/4277211/4277211-3.jpg",
+    ],
     features: ["Post-and-Beam Architecture", "Mountain Views", "Creek Access", "Tobacco Barn Workshop", "Irrigated Arena", "No Restrictions"],
     equestrianAmenities: {
       stalls: 28,
@@ -190,7 +206,11 @@ export const mockProperties: Property[] = [
     squareFeet: 3333,
     yearBuilt: 2008,
     description: "Three separate homes and an Olympic-quality riding arena define this extraordinary 24-acre equestrian estate in historic Hunting Country. The property features a 4-stall center-aisle barn and a 2-stall shed row barn, both impeccably maintained. Eight fenced paddocks provide flexible turnout options. The crown jewel is a 192x66 covered arena with professional lighting and quality footing. Direct access to the FETA trail system connects you to miles of riding throughout Tryon horse country. Located just minutes from the Tryon International Equestrian Center, this property offers the complete equestrian lifestyle.",
-    images: ["/images/properties/property-5-hero.jpg", "/images/properties/property-5-arena.jpg", "/images/properties/property-5-pasture.jpg"],
+    images: [
+      "https://cdn2.wncidx.com/41/94/239/4194239/4194239-1.jpg",
+      "https://cdn2.wncidx.com/41/94/239/4194239/4194239-2.jpg",
+      "https://cdn2.wncidx.com/41/94/239/4194239/4194239-3.jpg",
+    ],
     features: ["3 Separate Homes", "FETA Trail Access", "Olympic Arena", "Professional Lighting", "Historic Hunting Country", "Near TIEC"],
     equestrianAmenities: {
       stalls: 6,
@@ -227,7 +247,11 @@ export const mockProperties: Property[] = [
     squareFeet: 4917,
     yearBuilt: 2015,
     description: "Hidden Hollow Farm is a 92-acre mountain paradise featuring a private waterfall, 180-degree Blue Ridge Mountain views, and world-class equestrian facilities. The Wellington-style barn houses 6 premium stalls with rubber matting, fans, and auto waterers, plus a 2-bedroom apartment and fully equipped riders lounge. The luxury 4-bedroom, 6-bath residence showcases the finest finishes with an open floor plan designed to frame the stunning panoramic views. A private pool, FETA trail access, and proximity to the Tryon International Equestrian Center make this one of the most coveted equestrian estates in the Southeast.",
-    images: ["/images/properties/property-6-hero.jpg", "/images/properties/property-6-barn.jpg", "/images/properties/property-6-mountain.jpg"],
+    images: [
+      "https://cdn2.wncidx.com/42/77/544/4277544/4277544-1.jpg",
+      "https://cdn2.wncidx.com/42/77/544/4277544/4277544-2.jpg",
+      "https://cdn2.wncidx.com/42/77/544/4277544/4277544-3.jpg",
+    ],
     features: ["Private Waterfall", "180-Degree Mountain Views", "Pool", "Wellington-Style Barn", "Riders Lounge", "FETA Trail Access"],
     equestrianAmenities: {
       stalls: 6,
@@ -264,7 +288,11 @@ export const mockProperties: Property[] = [
     squareFeet: 2437,
     yearBuilt: 1929,
     description: "A beautifully restored 1929 home on 20 acres in the heart of NC horse country, this turnkey horse property is ready for riders of all levels. The 4-stall center-aisle barn with loft provides the main facility, complemented by an 8+ stall shed row barn with tack room and wash racks. A large riding arena and round pen offer ample training space. The lovingly renovated home preserves original character while incorporating modern updates throughout. Located minutes from the Tryon International Equestrian Center with easy access to trails and local equestrian services.",
-    images: ["/images/properties/property-7-hero.jpg", "/images/properties/property-7-barn.jpg", "/images/properties/property-7-pasture.jpg"],
+    images: [
+      "https://cdn2.wncidx.com/42/38/529/4238529/4238529-1.jpg",
+      "https://cdn2.wncidx.com/42/38/529/4238529/4238529-2.jpg",
+      "https://cdn2.wncidx.com/42/38/529/4238529/4238529-3.jpg",
+    ],
     features: ["Beautifully Restored 1929 Home", "Modern Updates", "Two Barns", "Round Pen", "Near TIEC", "Quiet Country Setting"],
     equestrianAmenities: {
       stalls: 12,
@@ -301,7 +329,11 @@ export const mockProperties: Property[] = [
     squareFeet: 4178,
     yearBuilt: 2002,
     description: "Rare equestrian opportunity just 15 minutes from the Tryon International Equestrian Center. This 23+ acre property features a spacious 4-bedroom, 4-bathroom home with over 4,100 square feet of living space. The 44x60 metal barn includes 8 stalls with rubber mats, a tack room, and a workshop for equipment maintenance. Fenced pastures with creek frontage provide excellent turnout with natural water. The gently rolling terrain and mature hardwoods create a private, park-like setting while remaining close to town and all equestrian amenities.",
-    images: ["/images/properties/property-8-hero.jpg", "/images/properties/property-8-barn.jpg", "/images/properties/property-8-creek.jpg"],
+    images: [
+      "https://cdn2.wncidx.com/43/41/560/4341560/4341560-1.jpg",
+      "https://cdn2.wncidx.com/43/41/560/4341560/4341560-2.jpg",
+      "https://cdn2.wncidx.com/43/41/560/4341560/4341560-3.jpg",
+    ],
     features: ["Creek Frontage", "Mature Hardwoods", "Metal Barn", "Workshop", "15 Min to TIEC", "Fenced Pastures"],
     equestrianAmenities: {
       stalls: 8,
@@ -338,7 +370,11 @@ export const mockProperties: Property[] = [
     squareFeet: 1188,
     yearBuilt: 1990,
     description: "Affordable small horse farm with year-round mountain views and income-generating potential. The property features a 120x70 riding arena, 6 rubber-matted stalls, and a 12x36 covered shelter. A separate ADU provides rental income or guest quarters. Fenced pastures and run-in shelters keep horses comfortable. Located just 13 miles from the Tryon International Equestrian Center, this property is perfect for a small boarding operation or private horse owner looking for an affordable entry into NC horse country.",
-    images: ["/images/properties/property-9-hero.jpg", "/images/properties/property-9-barn.jpg", "/images/properties/property-9-mountain.jpg"],
+    images: [
+      "https://cdn2.wncidx.com/43/07/154/4307154/4307154-1.jpg",
+      "https://cdn2.wncidx.com/43/07/154/4307154/4307154-2.jpg",
+      "https://cdn2.wncidx.com/43/07/154/4307154/4307154-3.jpg",
+    ],
     features: ["Mountain Views", "ADU for Rental Income", "Rubber-Matted Stalls", "Covered Shelter", "13 Miles to TIEC", "Boarding Potential"],
     equestrianAmenities: {
       stalls: 6,
@@ -375,7 +411,11 @@ export const mockProperties: Property[] = [
     squareFeet: 7360,
     yearBuilt: 2012,
     description: "Exceptional gated equestrian estate ideal for teaching, boarding, and income production. Located just 6 miles from the Tryon International Equestrian Center, the property features a 19,296 sq ft barn with a 60x144 indoor arena with viewing room, 12 stalls (10 with 12x24 run-outs), multiple tack rooms, and wash bays. Solar power reduces operating costs. The 7,360 sq ft main residence offers 8 bedrooms and 11 bathrooms across multiple levels, perfect for hosting riders and guests. Rolling pastures and wooded trails complete this world-class facility.",
-    images: ["/images/properties/property-10-hero.jpg", "/images/properties/property-10-barn.jpg", "/images/properties/property-10-aerial.jpg"],
+    images: [
+      "https://cdn2.wncidx.com/34/47/882/3447882/3447882-1.jpg",
+      "https://cdn2.wncidx.com/34/47/882/3447882/3447882-2.jpg",
+      "https://cdn2.wncidx.com/34/47/882/3447882/3447882-3.jpg",
+    ],
     features: ["Gated Community", "Solar Powered", "Indoor Arena with Viewing Room", "12 Stalls with Run-Outs", "Income Producing", "6 Miles to TIEC"],
     equestrianAmenities: {
       stalls: 12,
@@ -412,7 +452,11 @@ export const mockProperties: Property[] = [
     squareFeet: 2202,
     yearBuilt: 1985,
     description: "Affordable horse farm only 11 minutes from the Tryon International Equestrian Center. This well-maintained property features a 2-stall barn with tack and feed room, a run-in shelter, and a round pen with footing. The 3-bedroom, 2-bath home offers over 2,200 sq ft with a massive family room and refinished hardwood floors throughout. Fenced pastures and mature trees create a private country setting. An ideal starter farm for riders wanting to be part of the thriving Tryon equestrian community without breaking the bank.",
-    images: ["/images/properties/property-11-hero.jpg", "/images/properties/property-11-barn.jpg", "/images/properties/property-11-pasture.jpg"],
+    images: [
+      "https://cdn2.wncidx.com/43/36/964/4336964/4336964-1.jpg",
+      "https://cdn2.wncidx.com/43/36/964/4336964/4336964-2.jpg",
+      "https://cdn2.wncidx.com/43/36/964/4336964/4336964-3.jpg",
+    ],
     features: ["Refinished Hardwood Floors", "Large Family Room", "Round Pen with Footing", "Run-in Shelter", "11 Min to TIEC", "Private Setting"],
     equestrianAmenities: {
       stalls: 2,
@@ -449,7 +493,7 @@ export const mockProperties: Property[] = [
     squareFeet: 3600,
     yearBuilt: 1960,
     description: "Rare 5-acre equestrian property in the heart of Matthews with no HOA restrictions. This property previously accommodated horses with an existing barn featuring electricity, suitable for workshop or equestrian use. The 3,600 sq ft home includes wood floors, an updated kitchen, two primary suites perfect for multi-generational living, and an in-ground pool. The spacious lot offers room for a riding arena and multiple paddocks. An exceptional opportunity to create your own equestrian retreat close to Charlotte while enjoying the charm of historic Matthews.",
-    images: ["/images/properties/property-12-hero.jpg", "/images/properties/property-12-pool.jpg", "/images/properties/property-12-land.jpg"],
+    images: [],
     features: ["No HOA", "In-Ground Pool", "Wood Floors", "Updated Kitchen", "Two Primary Suites", "Multi-Generational Living"],
     equestrianAmenities: {
       stalls: 2,
