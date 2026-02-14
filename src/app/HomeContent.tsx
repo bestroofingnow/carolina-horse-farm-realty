@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Search,
   Home,
@@ -31,11 +32,21 @@ function formatPrice(price: number): string {
 
 function PropertyCard({ property }: { property: Property }) {
   return (
-    <div className="property-card bg-white rounded-lg overflow-hidden shadow-lg border border-forest-100">
-      <div className="relative h-64 bg-gradient-to-br from-forest-700 to-forest-900">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <Home className="w-16 h-16 text-forest-300 opacity-50" />
-        </div>
+    <div className="property-card group bg-white rounded-lg overflow-hidden shadow-lg border border-forest-100">
+      <div className="relative h-64 bg-forest-100 overflow-hidden">
+        {property.images.length > 0 ? (
+          <Image
+            src={property.images[0]}
+            alt={property.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-forest-700 to-forest-900 flex items-center justify-center">
+            <Home className="w-16 h-16 text-forest-300 opacity-50" />
+          </div>
+        )}
         <div className="absolute top-4 left-4">
           <span className="bg-gold-600 text-charcoal-900 px-3 py-1 rounded-full text-sm font-medium">
             {property.propertyType.charAt(0).toUpperCase() + property.propertyType.slice(1)}

@@ -88,9 +88,19 @@ function PropertyCard({ property }: { property: Property }) {
     >
       {/* Image Container */}
       <div className="relative aspect-[4/3] bg-cream-100 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-forest-100 to-forest-200 flex items-center justify-center">
-          <Home className="h-16 w-16 text-forest-300" />
-        </div>
+        {property.images.length > 0 ? (
+          <Image
+            src={property.images[0]}
+            alt={property.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-forest-100 to-forest-200 flex items-center justify-center">
+            <Home className="h-16 w-16 text-forest-300" />
+          </div>
+        )}
         {/* Status Badge */}
         {property.status === "active" && (
           <div className="absolute top-4 left-4 bg-forest-700 text-cream-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">

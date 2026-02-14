@@ -81,13 +81,23 @@ function PhotoGallery({ images, title }: { images: string[]; title: string }) {
     <div className="space-y-4">
       {/* Main Image */}
       <div className="relative aspect-[16/10] bg-forest-100 rounded-xl overflow-hidden group">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-forest-400">
-            <Home className="w-16 h-16 mx-auto mb-2" />
-            <p className="text-sm">Property Image</p>
-            <p className="text-xs">{images[currentIndex]}</p>
+        {images[currentIndex] ? (
+          <Image
+            src={images[currentIndex]}
+            alt={`${title} - Photo ${currentIndex + 1}`}
+            fill
+            sizes="(max-width: 1024px) 100vw, 66vw"
+            className="object-cover"
+            priority={currentIndex === 0}
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center text-forest-400">
+              <Home className="w-16 h-16 mx-auto mb-2" />
+              <p className="text-sm">Property Image</p>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Navigation Arrows */}
         {images.length > 1 && (
@@ -127,9 +137,19 @@ function PhotoGallery({ images, title }: { images: string[]; title: string }) {
                 : "opacity-70 hover:opacity-100"
             }`}
           >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Home className="w-6 h-6 text-forest-300" />
-            </div>
+            {image ? (
+              <Image
+                src={image}
+                alt={`${title} - Thumbnail ${index + 1}`}
+                fill
+                sizes="96px"
+                className="object-cover"
+              />
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Home className="w-6 h-6 text-forest-300" />
+              </div>
+            )}
           </button>
         ))}
       </div>
