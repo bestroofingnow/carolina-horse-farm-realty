@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getPost, getRelatedPosts, getPosts } from "@/lib/wordpress";
 import BlogPostContent from "./BlogPostContent";
 
+const siteUrl = "https://carolinahorsefarmrealty.com";
+
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
@@ -22,13 +24,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!post) {
     return {
-      title: "Article Not Found | Carolina Horse Farm Realty",
+      title: "Article Not Found",
     };
   }
 
   return {
-    title: `${post.title} | Carolina Horse Farm Realty`,
+    title: post.title,
     description: post.excerpt,
+    alternates: { canonical: `${siteUrl}/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -52,6 +55,55 @@ export const revalidate = 300;
 // Allow dynamic routes for posts not pre-generated at build time
 export const dynamicParams = true;
 
+async function BlogPostSchema({ slug }: { slug: string }) {
+  const post = await getPost(slug);
+  if (!post) return null;
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${siteUrl}/blog/${slug}/#article`,
+        headline: post.title,
+        description: post.excerpt,
+        url: `${siteUrl}/blog/${slug}`,
+        datePublished: post.publishedAt,
+        dateModified: post.publishedAt,
+        image: post.featuredImage || undefined,
+        author: {
+          "@type": "Person",
+          name: post.author.name,
+          url: `${siteUrl}/about`,
+        },
+        publisher: { "@id": `${siteUrl}/#organization` },
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        mainEntityOfPage: `${siteUrl}/blog/${slug}`,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", ".post-excerpt"],
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${siteUrl}/blog/${slug}/#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteUrl}/blog` },
+          { "@type": "ListItem", position: 3, name: post.title, item: `${siteUrl}/blog/${slug}` },
+        ],
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = await getPost(slug);
@@ -62,5 +114,10 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const relatedPosts = await getRelatedPosts(post, 3);
 
-  return <BlogPostContent post={post} relatedPosts={relatedPosts} />;
+  return (
+    <>
+      <BlogPostSchema slug={slug} />
+      <BlogPostContent post={post} relatedPosts={relatedPosts} />
+    </>
+  );
 }

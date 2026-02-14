@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -18,6 +19,22 @@ import {
 } from "lucide-react";
 import { teamMembers } from "@/lib/mock-data";
 import { TeamMember } from "@/types";
+
+const siteUrl = "https://carolinahorsefarmrealty.com";
+
+export const metadata: Metadata = {
+  title: "About Us - Equestrian Real Estate Experts",
+  description:
+    "Meet the Carolina Horse Farm Realty team — lifelong equestrians with 15+ years of experience helping buyers and sellers navigate horse property transactions in NC & SC. Brokered by eXp Realty Land & Ranch.",
+  alternates: { canonical: `${siteUrl}/about` },
+  openGraph: {
+    title: "About Carolina Horse Farm Realty - Equestrian Real Estate Experts",
+    description:
+      "Lifelong equestrians with 15+ years helping horse lovers find their dream property in the Carolinas.",
+    url: `${siteUrl}/about`,
+    type: "website",
+  },
+};
 
 // Extended team members for display (fallback if mock-data has limited entries)
 const extendedTeamMembers: TeamMember[] = [
@@ -216,12 +233,92 @@ function ServiceAreaCard({ name, description }: { name: string; description: str
   );
 }
 
+function AboutPageSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": `${siteUrl}/about/#webpage`,
+        url: `${siteUrl}/about`,
+        name: "About Carolina Horse Farm Realty",
+        description:
+          "Meet the Carolina Horse Farm Realty team — lifelong equestrians with 15+ years of experience in equestrian real estate.",
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        breadcrumb: { "@id": `${siteUrl}/about/#breadcrumb` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${siteUrl}/about/#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+          { "@type": "ListItem", position: 2, name: "About Us", item: `${siteUrl}/about` },
+        ],
+      },
+      {
+        "@type": "Person",
+        "@id": `${siteUrl}/#lara-murphy`,
+        name: "Lara Murphy",
+        jobTitle: "Broker / Owner",
+        description:
+          "With over 15 years of experience in equestrian real estate, Lara has helped hundreds of families find their perfect horse property. A lifelong equestrian herself, she understands the unique needs of horse owners.",
+        telephone: "+1-704-929-3289",
+        email: "lara@carolinahorsefarmrealty.com",
+        worksFor: { "@id": `${siteUrl}/#organization` },
+        knowsAbout: [
+          "Horse Farms",
+          "Equestrian Estates",
+          "Land for Horses",
+          "Horse Property Evaluation",
+          "Equestrian Facility Assessment",
+          "Pasture Management",
+          "NC Equestrian Zoning",
+        ],
+        hasCredential: {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "Real Estate Broker License",
+          recognizedBy: {
+            "@type": "Organization",
+            name: "North Carolina Real Estate Commission",
+          },
+        },
+      },
+      {
+        "@type": "Person",
+        name: "Michael Patterson",
+        jobTitle: "Senior Agent",
+        description:
+          "A decade of experience in luxury real estate combined with a passion for the equestrian lifestyle and agricultural property assessment.",
+        worksFor: { "@id": `${siteUrl}/#organization` },
+        knowsAbout: ["Luxury Estates", "Training Facilities", "Investment Properties"],
+      },
+      {
+        "@type": "Person",
+        name: "Sarah Chen",
+        jobTitle: "Equestrian Property Specialist",
+        description:
+          "A competitive dressage rider turned real estate professional, specializing in matching buyers with properties suited to their equestrian discipline.",
+        worksFor: { "@id": `${siteUrl}/#organization` },
+        knowsAbout: ["Dressage Facilities", "Show Barns", "First-Time Buyers"],
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function AboutPage() {
   // Use extended team members if mock-data has limited entries
   const displayTeamMembers = teamMembers.length >= 3 ? teamMembers : extendedTeamMembers;
 
   return (
     <div className="min-h-screen bg-cream-50">
+      <AboutPageSchema />
       {/* Hero Section */}
       <section className="relative py-24 lg:py-32">
         <div className="absolute inset-0">
