@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" fill="none">
+  <!-- eXp logo mark - light version for dark backgrounds -->
+  <g fill="#e8e4d9">
+    <!-- "e" letter -->
+    <path d="M8.5 27.2c0-6.8 4.8-11.5 11.2-11.5 6.2 0 10.6 4.4 10.6 11.2v1.6H14.2c.6 4 3.5 6.3 7.5 6.3 2.7 0 5-1 6.8-2.9l3 3c-2.7 2.8-6.2 4.4-10.5 4.4-7.5 0-12.5-5.2-12.5-12.1zm16.8-2.8c-.5-3.6-2.9-5.8-6.2-5.8-3.3 0-5.8 2.2-6.4 5.8h12.6z"/>
+    <!-- "X" letter -->
+    <path d="M35.5 16.2h5.8l5.8 9 5.8-9h5.8L49.5 29.5l9.5 14H53l-6.2-9.5-6.2 9.5h-5.8l9.5-14z"/>
+    <!-- "p" letter -->
+    <path d="M60.5 16.2h5v3.2c1.8-2.3 4.5-3.8 7.6-3.8 6.2 0 10.8 5 10.8 11.6s-4.5 11.6-10.8 11.6c-2.8 0-5.3-1.3-7.1-3.4V49h-5.5V16.2zm11.2 18c4 0 6.7-3.2 6.7-7.2s-2.7-7.2-6.7-7.2-6.7 3.2-6.7 7.2 2.7 7.2 6.7 7.2z"/>
+  </g>
+  <!-- REALTY text -->
+  <text x="48" y="48" text-anchor="middle" font-size="7.5" font-family="Arial, Helvetica, sans-serif" letter-spacing="3.5" fill="#e8e4d9" font-weight="400">REALTY</text>
+  <!-- Divider line -->
+  <line x1="100" y1="10" x2="100" y2="46" stroke="#e8e4d9" stroke-width="1.2" opacity="0.5"/>
+  <!-- LAND & RANCH text -->
+  <text x="190" y="28" text-anchor="middle" font-size="16" font-family="Georgia, 'Times New Roman', serif" font-weight="700" letter-spacing="2" fill="#e8e4d9">LAND &amp;</text>
+  <text x="190" y="46" text-anchor="middle" font-size="16" font-family="Georgia, 'Times New Roman', serif" font-weight="700" letter-spacing="2" fill="#e8e4d9">RANCH</text>
+</svg>

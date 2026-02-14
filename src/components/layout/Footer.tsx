@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 
 const quickLinks = [
@@ -14,16 +15,15 @@ const quickLinks = [
 
 const citiesServed = [
   "Charlotte",
-  "Huntersville",
-  "Cornelius",
-  "Davidson",
-  "Mooresville",
-  "Waxhaw",
-  "Weddington",
+  "Columbus",
+  "Forest City",
   "Matthews",
+  "Mill Spring",
+  "Mooresville",
   "Mint Hill",
-  "Indian Trail",
-  "Stallings",
+  "Rutherfordton",
+  "Tryon",
+  "Waxhaw",
 ];
 
 const socialLinks = [
@@ -45,9 +45,18 @@ export default function Footer() {
             </h3>
             <p className="text-forest-200 text-sm leading-relaxed">
               Specializing in horse farms, luxury equestrian properties, and
-              country estates throughout the Charlotte Metro area. Your trusted
+              country estates throughout North &amp; South Carolina. Your trusted
               partner in finding the perfect equestrian lifestyle.
             </p>
+            <div className="pt-2">
+              <Image
+                src="/images/exp-land-ranch-logo-light.svg"
+                alt="eXp Realty Land & Ranch"
+                width={160}
+                height={45}
+                className="h-10 w-auto opacity-80"
+              />
+            </div>
             {/* Social Links */}
             <div className="flex space-x-4 pt-2">
               {socialLinks.map((social) => (
@@ -121,10 +130,10 @@ export default function Footer() {
           {/* Cities Served */}
           <div>
             <h3 className="text-lg font-semibold text-cream-100 mb-4">
-              Charlotte Metro, NC
+              North &amp; South Carolina
             </h3>
             <p className="text-forest-300 text-xs mb-3 uppercase tracking-wide">
-              Cities We Serve
+              Areas We Serve
             </p>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-1">
               {citiesServed.map((city) => (
@@ -145,7 +154,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-forest-300 text-sm">
-              &copy; 2025 Carolina Horse Farm Realty. All rights reserved.
+              &copy; {new Date().getFullYear()} Carolina Horse Farm Realty. Brokered by eXp Realty. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link
