@@ -57,6 +57,7 @@ function HorseLogo({ className = "w-10 h-10" }: { className?: string }) {
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/properties", label: "Properties" },
+  { href: "/estimate", label: "Free Estimate" },
   { href: "/about", label: "About" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },

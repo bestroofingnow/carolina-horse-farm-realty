@@ -7,23 +7,23 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react
 const quickLinks = [
   { name: "Home", href: "/" },
   { name: "Properties", href: "/properties" },
-  { name: "Horse Farms", href: "/horse-farms" },
-  { name: "Land & Acreage", href: "/land" },
+  { name: "Free Estimate", href: "/estimate" },
+  { name: "Service Areas", href: "/areas" },
   { name: "About Us", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
 
 const citiesServed = [
-  "Charlotte",
-  "Columbus",
-  "Forest City",
-  "Matthews",
-  "Mill Spring",
-  "Mooresville",
-  "Mint Hill",
-  "Rutherfordton",
-  "Tryon",
-  "Waxhaw",
+  { name: "Charlotte", slug: "charlotte" },
+  { name: "Columbus", slug: "columbus" },
+  { name: "Forest City", slug: "forest-city" },
+  { name: "Matthews", slug: "matthews" },
+  { name: "Mill Spring", slug: "mill-spring" },
+  { name: "Mooresville", slug: "mooresville" },
+  { name: "Mint Hill", slug: "mint-hill" },
+  { name: "Rutherfordton", slug: "rutherfordton" },
+  { name: "Tryon", slug: "tryon" },
+  { name: "Waxhaw", slug: "waxhaw" },
 ];
 
 const socialLinks = [
@@ -137,11 +137,13 @@ export default function Footer() {
             </p>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-1">
               {citiesServed.map((city) => (
-                <li
-                  key={city}
-                  className="text-forest-200 text-sm"
-                >
-                  {city}
+                <li key={city.slug}>
+                  <Link
+                    href={`/areas/${city.slug}`}
+                    className="text-forest-200 hover:text-gold-400 transition-colors text-sm"
+                  >
+                    {city.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -156,20 +158,6 @@ export default function Footer() {
             <p className="text-forest-300 text-sm">
               &copy; {new Date().getFullYear()} Carolina Horse Farm Realty. Brokered by eXp Realty. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              <Link
-                href="/privacy"
-                className="text-forest-300 hover:text-gold-400 transition-colors text-sm"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="/terms"
-                className="text-forest-300 hover:text-gold-400 transition-colors text-sm"
-              >
-                Terms of Service
-              </Link>
-            </div>
           </div>
         </div>
       </div>
